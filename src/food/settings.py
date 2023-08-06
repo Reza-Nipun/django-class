@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # Third-Party
     'rest_framework',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
+
+AUTH_USER_MODEL = "user.User"
